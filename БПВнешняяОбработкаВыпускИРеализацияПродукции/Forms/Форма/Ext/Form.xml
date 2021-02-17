@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
 	<CommandSet>
 		<ExcludedCommand>CustomizeForm</ExcludedCommand>
 	</CommandSet>
@@ -509,8 +510,19 @@
 											<ContextMenu name="СписокДокументовОрганизацияКонтекстноеМеню" id="176"/>
 											<ExtendedTooltip name="СписокДокументовОрганизацияРасширеннаяПодсказка" id="177"/>
 										</LabelField>
+										<LabelField name="СписокДокументовКонтрагент" id="248">
+											<DataPath>СписокДокументов.Контрагент</DataPath>
+											<ContextMenu name="СписокДокументовКонтрагентКонтекстноеМеню" id="249"/>
+											<ExtendedTooltip name="СписокДокументовКонтрагентРасширеннаяПодсказка" id="250"/>
+										</LabelField>
+										<LabelField name="СписокДокументовСклад" id="251">
+											<DataPath>СписокДокументов.Склад</DataPath>
+											<ContextMenu name="СписокДокументовСкладКонтекстноеМеню" id="252"/>
+											<ExtendedTooltip name="СписокДокументовСкладРасширеннаяПодсказка" id="253"/>
+										</LabelField>
 										<LabelField name="СписокДокументовИнформация" id="178">
 											<DataPath>СписокДокументов.Информация</DataPath>
+											<Visible>false</Visible>
 											<ContextMenu name="СписокДокументовИнформацияКонтекстноеМеню" id="179"/>
 											<ExtendedTooltip name="СписокДокументовИнформацияРасширеннаяПодсказка" id="180"/>
 										</LabelField>
@@ -552,92 +564,6 @@
 										</LabelField>
 									</ChildItems>
 								</Table>
-								<Table name="Реквизит1" id="211">
-									<Visible>false</Visible>
-									<UseAlternationRowColor>true</UseAlternationRowColor>
-									<EnableStartDrag>true</EnableStartDrag>
-									<DataPath>Реквизит1</DataPath>
-									<RowPictureDataPath>Реквизит1.DefaultPicture</RowPictureDataPath>
-									<AutoRefresh>false</AutoRefresh>
-									<AutoRefreshPeriod>60</AutoRefreshPeriod>
-									<Period>
-										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-									</Period>
-									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-									<RestoreCurrentRow>false</RestoreCurrentRow>
-									<TopLevelParent xsi:nil="true"/>
-									<ShowRoot>true</ShowRoot>
-									<AllowRootChoice>false</AllowRootChoice>
-									<UpdateOnDataChange>Auto</UpdateOnDataChange>
-									<ContextMenu name="Реквизит1КонтекстноеМеню" id="212"/>
-									<AutoCommandBar name="Реквизит1КоманднаяПанель" id="213"/>
-									<ExtendedTooltip name="Реквизит1РасширеннаяПодсказка" id="214"/>
-									<SearchStringAddition name="Реквизит1СтрокаПоиска" id="215">
-										<AdditionSource>
-											<Item>Реквизит1</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="Реквизит1СтрокаПоискаКонтекстноеМеню" id="216"/>
-										<ExtendedTooltip name="Реквизит1СтрокаПоискаРасширеннаяПодсказка" id="217"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="Реквизит1СостояниеПросмотра" id="218">
-										<AdditionSource>
-											<Item>Реквизит1</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="Реквизит1СостояниеПросмотраКонтекстноеМеню" id="219"/>
-										<ExtendedTooltip name="Реквизит1СостояниеПросмотраРасширеннаяПодсказка" id="220"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="Реквизит1УправлениеПоиском" id="221">
-										<AdditionSource>
-											<Item>Реквизит1</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="Реквизит1УправлениеПоискомКонтекстноеМеню" id="222"/>
-										<ExtendedTooltip name="Реквизит1УправлениеПоискомРасширеннаяПодсказка" id="223"/>
-									</SearchControlAddition>
-									<ChildItems>
-										<LabelField name="Реквизит1Дата" id="224">
-											<DataPath>Реквизит1.Дата</DataPath>
-											<ContextMenu name="Реквизит1ДатаКонтекстноеМеню" id="225"/>
-											<ExtendedTooltip name="Реквизит1ДатаРасширеннаяПодсказка" id="226"/>
-										</LabelField>
-										<LabelField name="Реквизит1Номер" id="227">
-											<DataPath>Реквизит1.Номер</DataPath>
-											<ContextMenu name="Реквизит1НомерКонтекстноеМеню" id="228"/>
-											<ExtendedTooltip name="Реквизит1НомерРасширеннаяПодсказка" id="229"/>
-										</LabelField>
-										<LabelField name="Реквизит1Организация" id="230">
-											<DataPath>Реквизит1.Организация</DataPath>
-											<ContextMenu name="Реквизит1ОрганизацияКонтекстноеМеню" id="231"/>
-											<ExtendedTooltip name="Реквизит1ОрганизацияРасширеннаяПодсказка" id="232"/>
-										</LabelField>
-										<CheckBoxField name="Реквизит1ПометкаУдаления" id="233">
-											<DataPath>Реквизит1.ПометкаУдаления</DataPath>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="Реквизит1ПометкаУдаленияКонтекстноеМеню" id="234"/>
-											<ExtendedTooltip name="Реквизит1ПометкаУдаленияРасширеннаяПодсказка" id="235"/>
-										</CheckBoxField>
-										<CheckBoxField name="Реквизит1Проведен" id="236">
-											<DataPath>Реквизит1.Проведен</DataPath>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="Реквизит1ПроведенКонтекстноеМеню" id="237"/>
-											<ExtendedTooltip name="Реквизит1ПроведенРасширеннаяПодсказка" id="238"/>
-										</CheckBoxField>
-										<LabelField name="Реквизит1Ссылка" id="239">
-											<DataPath>Реквизит1.Ссылка</DataPath>
-											<ContextMenu name="Реквизит1СсылкаКонтекстноеМеню" id="240"/>
-											<ExtendedTooltip name="Реквизит1СсылкаРасширеннаяПодсказка" id="241"/>
-										</LabelField>
-										<LabelField name="Реквизит1СтандартнаяКартинка" id="242">
-											<DataPath>Реквизит1.DefaultPicture</DataPath>
-											<ContextMenu name="Реквизит1СтандартнаяКартинкаКонтекстноеМеню" id="243"/>
-											<ExtendedTooltip name="Реквизит1СтандартнаяКартинкаРасширеннаяПодсказка" id="244"/>
-										</LabelField>
-									</ChildItems>
-								</Table>
 							</ChildItems>
 						</Page>
 						<Page name="СтраницаНастройки" id="11">
@@ -668,6 +594,7 @@
 											<v8:content>Группа настройки</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="92"/>
@@ -982,27 +909,38 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	ЖурналДокументовЖурналОпераций.Ссылка КАК Ссылка,
-	ЖурналДокументовЖурналОпераций.Дата КАК Дата,
-	ЖурналДокументовЖурналОпераций.ПометкаУдаления КАК ПометкаУдаления,
-	ЖурналДокументовЖурналОпераций.Номер КАК Номер,
-	ЖурналДокументовЖурналОпераций.Проведен КАК Проведен,
-	ЖурналДокументовЖурналОпераций.Организация КАК Организация,
-	ЖурналДокументовЖурналОпераций.Информация КАК Информация,
-	ЖурналДокументовЖурналОпераций.РучнаяКорректировка КАК РучнаяКорректировка,
-	ЖурналДокументовЖурналОпераций.СостояниеРеглОперации КАК СостояниеРеглОперации,
-	ЖурналДокументовЖурналОпераций.СуммаДокумента КАК СуммаДокумента,
-	ЖурналДокументовЖурналОпераций.ВалютаДокумента КАК ВалютаДокумента,
-	ЖурналДокументовЖурналОпераций.ВидОперации КАК ВидОперации,
-	ЖурналДокументовЖурналОпераций.ДоговорКонтрагента КАК ДоговорКонтрагента,
-	ЖурналДокументовЖурналОпераций.НомерВходящегоДокумента КАК НомерВходящегоДокумента,
-	ЖурналДокументовЖурналОпераций.ДатаВходящегоДокумента КАК ДатаВходящегоДокумента,
-	ЖурналДокументовЖурналОпераций.Ответственный КАК Ответственный,
-	ЖурналДокументовЖурналОпераций.Комментарий КАК Комментарий,
-	ЖурналДокументовЖурналОпераций.Тип КАК Тип
+	ЖурналОпераций.Ссылка КАК Ссылка,
+	ЖурналОпераций.Дата КАК Дата,
+	ЖурналОпераций.ПометкаУдаления КАК ПометкаУдаления,
+	ЖурналОпераций.Номер КАК Номер,
+	ЖурналОпераций.Проведен КАК Проведен,
+	ЖурналОпераций.Организация КАК Организация,
+	ВЫБОР
+		КОГДА ЖурналОпераций.Ссылка ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ЖурналОпераций.Ссылка КАК Документ.РеализацияТоваровУслуг).Склад
+		КОГДА ЖурналОпераций.Ссылка ССЫЛКА Документ.ОтчетПроизводстваЗаСмену
+			ТОГДА ВЫРАЗИТЬ(ЖурналОпераций.Ссылка КАК Документ.ОтчетПроизводстваЗаСмену).Склад
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.Склады.ПустаяСсылка)
+	КОНЕЦ КАК Склад,
+	ВЫБОР
+		КОГДА ЖурналОпераций.Ссылка ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ЖурналОпераций.Ссылка КАК Документ.РеализацияТоваровУслуг).Контрагент
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)
+	КОНЕЦ КАК Контрагент,
+	ЖурналОпераций.Информация КАК Информация,
+	ЖурналОпераций.РучнаяКорректировка КАК РучнаяКорректировка,
+	ЖурналОпераций.СостояниеРеглОперации КАК СостояниеРеглОперации,
+	ЖурналОпераций.СуммаДокумента КАК СуммаДокумента,
+	ЖурналОпераций.ВалютаДокумента КАК ВалютаДокумента,
+	ЖурналОпераций.ВидОперации КАК ВидОперации,
+	ЖурналОпераций.ДоговорКонтрагента КАК ДоговорКонтрагента,
+	ЖурналОпераций.НомерВходящегоДокумента КАК НомерВходящегоДокумента,
+	ЖурналОпераций.ДатаВходящегоДокумента КАК ДатаВходящегоДокумента,
+	ЖурналОпераций.Ответственный КАК Ответственный,
+	ЖурналОпераций.Комментарий КАК Комментарий,
+	ЖурналОпераций.Тип КАК Тип
 ИЗ
-	ЖурналДокументов.ЖурналОпераций КАК ЖурналДокументовЖурналОпераций
-</QueryText>
+	ЖурналДокументов.ЖурналОпераций КАК ЖурналОпераций</QueryText>
 				<MainTable>DocumentJournal.ЖурналОпераций</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -1011,53 +949,8 @@
 							<dcsset:comparisonType>InList</dcsset:comparisonType>
 							<dcsset:right xsi:type="dcscor:DesignTimeValue">Документ.ОтчетПроизводстваЗаСмену</dcsset:right>
 							<dcsset:right xsi:type="dcscor:DesignTimeValue">Документ.РеализацияТоваровУслуг</dcsset:right>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
 						</dcsset:item>
-						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
-					</dcsset:filter>
-					<dcsset:order>
-						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
-					</dcsset:order>
-					<dcsset:conditionalAppearance>
-						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
-					</dcsset:conditionalAppearance>
-					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
-					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
-				</ListSettings>
-			</Settings>
-		</Attribute>
-		<Attribute name="Реквизит1" id="4">
-			<Type>
-				<v8:Type>cfg:DynamicList</v8:Type>
-			</Type>
-			<Settings xsi:type="DynamicList">
-				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
-				<QueryText>ВЫБРАТЬ
-	ДокументРеализацияТоваровУслуг.Ссылка КАК Ссылка,
-	ДокументРеализацияТоваровУслуг.ПометкаУдаления КАК ПометкаУдаления,
-	ДокументРеализацияТоваровУслуг.Номер КАК Номер,
-	ДокументРеализацияТоваровУслуг.Дата КАК Дата,
-	ДокументРеализацияТоваровУслуг.Проведен КАК Проведен,
-	ДокументРеализацияТоваровУслуг.Организация КАК Организация
-ИЗ
-	Документ.РеализацияТоваровУслуг КАК ДокументРеализацияТоваровУслуг
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	ОтчетПроизводстваЗаСмену.Ссылка,
-	ОтчетПроизводстваЗаСмену.ПометкаУдаления,
-	ОтчетПроизводстваЗаСмену.Номер,
-	ОтчетПроизводстваЗаСмену.Дата,
-	ОтчетПроизводстваЗаСмену.Проведен,
-	ОтчетПроизводстваЗаСмену.Организация
-ИЗ
-	Документ.ОтчетПроизводстваЗаСмену КАК ОтчетПроизводстваЗаСмену</QueryText>
-				<ListSettings>
-					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>

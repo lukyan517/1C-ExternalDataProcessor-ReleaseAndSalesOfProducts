@@ -134,7 +134,7 @@
 	<format>
 		<border>0</border>
 		<borderColor>style:ReportLineColor</borderColor>
-		<width>42</width>
+		<width>44</width>
 	</format>
 	<format>
 		<border>0</border>
@@ -179,11 +179,17 @@
 		<valueType>
 			<v8:Type>xs:decimal</v8:Type>
 			<v8:NumberQualifiers>
-				<v8:Digits>6</v8:Digits>
+				<v8:Digits>7</v8:Digits>
 				<v8:FractionDigits>3</v8:FractionDigits>
 				<v8:AllowedSign>Any</v8:AllowedSign>
 			</v8:NumberQualifiers>
 		</valueType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧГ=</v8:content>
+			</v8:item>
+		</format>
 		<controlType>381ed624-9217-4e63-85db-c4c3cb87daae</controlType>
 	</format>
 	<format>
@@ -204,11 +210,17 @@
 		<valueType>
 			<v8:Type>xs:decimal</v8:Type>
 			<v8:NumberQualifiers>
-				<v8:Digits>6</v8:Digits>
+				<v8:Digits>7</v8:Digits>
 				<v8:FractionDigits>3</v8:FractionDigits>
 				<v8:AllowedSign>Any</v8:AllowedSign>
 			</v8:NumberQualifiers>
 		</valueType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧГ=</v8:content>
+			</v8:item>
+		</format>
 		<controlType>381ed624-9217-4e63-85db-c4c3cb87daae</controlType>
 	</format>
 	<format>
