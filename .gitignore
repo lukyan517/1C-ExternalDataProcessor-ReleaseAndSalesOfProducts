@@ -1,4 +1,8 @@
 Старые версии/
+.1CStorage/
+*.cf
+*.cfe
+*.cfu
 *.epf
 *.erf
 *.mxl
