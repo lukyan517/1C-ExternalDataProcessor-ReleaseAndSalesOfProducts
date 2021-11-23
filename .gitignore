@@ -2,6 +2,8 @@
 .1CStorage/
 bin/
 .vscode/
+v8r_TempDB/
+DemoAccounting30/
 *.cf
 *.cfe
 *.cfu
