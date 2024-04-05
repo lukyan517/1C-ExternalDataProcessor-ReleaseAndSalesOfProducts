@@ -720,6 +720,7 @@
 									<ExtendedTooltip name="ДекорацияОтступ_ВертикальнаяЧерта1РасширеннаяПодсказка" id="279"/>
 								</LabelDecoration>
 								<UsualGroup name="ГруппаПубликация" id="80">
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -754,6 +755,7 @@
 									</ChildItems>
 								</UsualGroup>
 								<LabelDecoration name="ДекорацияОтступ_ВертикальнаяЧерта2" id="274">
+									<Visible>false</Visible>
 									<HorizontalStretch>false</HorizontalStretch>
 									<TextColor>style:ГиперссылкаЦвет</TextColor>
 									<Title formatted="false">
